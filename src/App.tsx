@@ -9,6 +9,11 @@ import offer4 from './image/offer4.png'
 import offer5 from './image/offer5.png'
 import offer6 from './image/offer6.png'
 import graphic from './image/graphic-min.png'
+import insta from './image/insta.png'
+import dribbble from './image/dribbble.png'
+import twitter from './image/twitter.png'
+import youtube from './image/youtube.png'
+
 
 function App() {
   return (
@@ -44,6 +49,7 @@ function App() {
             <a href='#' className='LogIn'>Log in</a>
             <button className='buttonGetStarted' >Get started free</button>
           </nav>
+          <div className='menu'></div>
         </div>
       </header>
       <body>
@@ -59,7 +65,7 @@ function App() {
               <br />
               as develop trust, collaborate, and drive team performance.</p></p>
           <div className='mail'>
-            <input type='email' placeholder='name@yourcompany.com' />
+            <input type='email' placeholder='name@yourcompany.com' className='email'/>
             <button className='buttonTryItFree'>Try it free</button>
           </div>
         </div>
@@ -235,34 +241,30 @@ function App() {
           <div className='container'>
             <p className='get_app_discription'>84% of employees who use<br />trust their direct manager</p>
             <div className='buttons_to_download'>
-              <button className='button_android'>
-
-              </button>
-              <button className='button_ios'>
-
-              </button>
+              <button className='button_android'/>
+              <button className='button_ios'/>
             </div>
 
           </div>
         </div>
       </body>
       <footer>
+        <div className='footer_container'>
         <div className='container'>
-
-          <ul>
+          <ul className='company'>
             Company
             <li><a href=''>About Us</a></li>
             <li><a href=''>Blog</a></li>
             <li><a href=''>Careers</a></li>
             <li><a href=''>Contact Us</a></li>
           </ul>
-          <ul>
+          <ul className='support'>
             Support
             <li><a href=''>Help Center</a></li>
             <li><a href=''>Safety Center</a></li>
             <li><a href=''>Community</a></li>
           </ul>
-          <ul>
+          <ul className='legal'>
             Legal
             <li><a href=''>Cookies Policy</a></li>
             <li><a href=''>Privacy Policy</a></li>
@@ -270,17 +272,24 @@ function App() {
           </ul>
           <ul>
             Install App
-            <li><button className='footer_button'>
-
-            </button>
+            <li><button className='footer_button_android'/>
             </li>
             <li>
-              <button className='footer_button'>
-
-              </button>
+              <button className='footer_button_ios'/>
             </li>
           </ul>
-
+        </div>
+        </div>
+        <div className='copyright'>
+          <span>
+            © 2020 - All rights reserved
+          </span>
+          <div className='social_media'>
+            <a href='#'><img src={insta}></img></a>
+            <a href='#'><img src={dribbble}></img></a>
+            <a href='#'><img src={twitter}></img></a>
+            <a href='#'><img src={youtube}></img></a>
+          </div>
         </div>
       </footer>
     </div>

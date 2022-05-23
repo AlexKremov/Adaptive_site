@@ -11,10 +11,6 @@ div a {
   color: #35414b;
 }
 
-/* .topmenu {
-  margin: 0 1% 0 1%;
-} */
-
 .topmenu > li {
   float: left;
   position: relative;
@@ -25,7 +21,7 @@ div a {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  /* padding: 0 30px 0 30px; */
+
 }
 .topmenu li a:hover {
   color: #472ab8;
